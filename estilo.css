@@ -20,6 +20,7 @@ background: #E5E5E5;
     padding-left: 21px;
     background: #CF2B2B;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    z-index: 1;
 }
 h1{
 font-family: 'Righteous';
@@ -66,7 +67,17 @@ color: #333333;
     flex-direction: row;
     margin-top: 17px;
     overflow-x: scroll
+    
 }
+ion-icon {
+    display: none;
+    font-size: 18px;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    color: #32B72F;
+}
+
 .opcao{
     display: flex;
     flex-direction: column;
@@ -76,6 +87,21 @@ color: #333333;
     background: #FFFFFF;
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25);
     border-radius: 9px;
+    position: relative;
+}
+.selecionado{
+    box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
+}
+.checkIcon{
+   
+    font-size: 18px;
+    position: absolute;
+    right: 13px;
+    bottom: 13px;
+    color: #32B72F;
+}
+.on{
+    display:flex;
 }
 .imagem{
 width: 144px;
@@ -115,19 +141,18 @@ color: #000000;
     padding: 25px 15px;
     background: #FFFFFF;
 }
-.selecionar{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.selecionar{ 
     background: #CBCBCB;  
 }
 
 .fechar{
-    display: none;
     background: #32B72F;
 }
 .fechar,
 .selecionar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 364px;
     height: 61px;
     /* left: 25px;
@@ -141,4 +166,7 @@ color: #000000;
     align-items: center;
     letter-spacing: 0.018em;
     color: #FFFFFF;
+}
+.escondido{
+    display: none;
 }

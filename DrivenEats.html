@@ -21,7 +21,8 @@
             <div class="prato">
                 <h2>Primeiro, seu prato</h2>
                 <div class="opcoes">
-                    <div class="opcao">
+                    <div onclick="selecionarPrato(this)" class="opcao">
+                        <ion-icon class="checkIcon" name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/frango_yin_yang.png">
                         </div>
@@ -31,7 +32,8 @@
                         </div>
                         <div class="preco">R$ 14,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarPrato(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/frango_yin_yang.png">
                         </div>
@@ -41,7 +43,8 @@
                         </div>
                         <div class="preco">R$ 14,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarPrato(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/frango_yin_yang.png">
                         </div>
@@ -56,7 +59,8 @@
             <div class="bebida">
                 <h2>Agora, sua bebida</h2>
                 <div class="opcoes">
-                    <div class="opcao">
+                    <div onclick="selecionarBebida(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/coca-cola.png">
                         </div>
@@ -66,7 +70,8 @@
                         </div>
                         <div class="preco">R$ 4,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarBebida(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/coca-cola.png">
                         </div>
@@ -76,7 +81,8 @@
                         </div>
                         <div class="preco">R$ 4,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarBebida(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/coca-cola.png">
                         </div>
@@ -91,7 +97,8 @@
             <div class="sobremesa">
                 <h2>Por fim, sua sobremesa</h2>
                 <div class="opcoes">
-                    <div class="opcao">
+                    <div onclick="selecionarSobremesa(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/pudim.png">
                         </div>
@@ -101,7 +108,8 @@
                         </div>
                         <div class="preco">R$ 7,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarSobremesa(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/pudim.png">
                         </div>
@@ -111,7 +119,8 @@
                         </div>
                         <div class="preco">R$ 7,90</div>
                     </div>
-                    <div class="opcao">
+                    <div onclick="selecionarSobremesa(this)" class="opcao">
+                        <ion-icon name="checkmark-circle"></ion-icon>
                         <div class="imagem">
                             <img src="projeto__driven-eats__imagens/pudim.png">
                         </div>
@@ -126,8 +135,11 @@
         </div>
         <div class="footer">
             <div class="selecionar">Selecione os 3 itens para fechar o pedido</div>
-            <div class="fechar">Fechar pedido</div>
+            <div onclick="msgFinal()" class="fechar escondido">Fechar pedido</div>
         </div>
     </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
