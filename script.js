@@ -71,21 +71,27 @@ function msgFinal(){
     // priceDrink = Number(priceDrinkEsc.innerHTML);
     // priceDessert = Number(priceDessertEsc.innerHTML);
 
+    // para retirar R$ 
+    // .replace("R$ ", " ")
     // para trocar , por . 
     // .replace(",", ".");
-
-    priceDish = Number(priceDishEsc.innerHTML.replace(",", "."));
-    priceDrink = Number(priceDrinkEsc.innerHTML.replace(",", "."));
-    priceDessert = Number(priceDessertEsc.innerHTML.replace(",", "."));
+ 
+    priceDish = Number(priceDishEsc.innerHTML.replace("R$ ", " ").replace(",", "."));
+    priceDrink = Number(priceDrinkEsc.innerHTML.replace("R$ ", " ").replace(",", "."));
+    priceDessert = Number(priceDessertEsc.innerHTML.replace("R$ ", " ").replace(",", "."));
+    
 
     const total = priceDish + priceDrink + priceDessert;
+    
     //usando toFixed() para determinar a qtd de casas decimais
     const price = total.toFixed(2);
 
-    // para transformar número em string
-    // toString()
-    // para trocar , por . : .replace(".", ",")
-    let priceFinal = price.toString().replace(".", ",");
+    // para deixar o número final com vírgula
+    // // transformar o número em string
+    // // .toString()
+    // // para trocar , por . : .replace(".", ",")
+
+    // let priceFinal = price.toString().replace(".", ",");
         
     let pedido = `Olá, gostaria de fazer o pedido: 
     
@@ -99,11 +105,11 @@ function msgFinal(){
     
     console.log(pedido);
     //para abrir página na internet via link
-    function abreLink(){
+    function abrirLink(){
         window.open(`https://wa.me/5521970027981?text=${encodeURIComponent(pedido)}`);
     }
 
-    abreLink();
+    abrirLink();
 }
     
 
