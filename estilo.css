@@ -70,7 +70,7 @@ color: #333333;
     
 }
 ion-icon {
-    display: none;
+    /* display: none; */
     font-size: 18px;
     position: absolute;
     right: 13px;
