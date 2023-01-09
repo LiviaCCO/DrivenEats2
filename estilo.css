@@ -67,7 +67,6 @@ color: #333333;
     flex-direction: row;
     margin-top: 17px;
     overflow-x: scroll
-    
 }
 ion-icon {
     /* display: none; */
@@ -75,7 +74,7 @@ ion-icon {
     position: absolute;
     right: 13px;
     bottom: 13px;
-    color: #32B72F;
+    color: #FFFFFF;
 }
 
 .opcao{
@@ -92,16 +91,9 @@ ion-icon {
 .selecionado{
     box-shadow: 0px 0px 10px -4px rgba(0, 0, 0, 0.25), inset 0px 0px 0px 5px #32B72F;
 }
-.checkIcon{
-   
-    font-size: 18px;
-    position: absolute;
-    right: 13px;
-    bottom: 13px;
+
+.checkOn{
     color: #32B72F;
-}
-.on{
-    display:flex;
 }
 .imagem{
 width: 144px;

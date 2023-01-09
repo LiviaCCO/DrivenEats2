@@ -1,19 +1,14 @@
 let pratoEsc;
 function selecionarPrato(pratoSelecionado){
     const prato = document.querySelector(".prato .selecionado");
+    const check = pratoSelecionado.querySelector("ion-icon");
     if (prato !== null){
         prato.classList.toggle('selecionado');
+        const checkOn = document.querySelector(".prato .checkOn");
+        checkOn.classList.toggle('checkOn');
     }
     pratoSelecionado.classList.add('selecionado');
-
-
-    const check = document.querySelector(".prato .escondido");
-    console.log(check);
-    if (check !== null){
-        check.classList.toggle('escondido');
-    }
-    check.classList.remove('escondido');
-
+    check.classList.add('checkOn');
 
     pratoEsc = pratoSelecionado.innerHTML;
     fecharPedido();
@@ -22,10 +17,15 @@ function selecionarPrato(pratoSelecionado){
 let bebidaEsc;
 function selecionarBebida(bebidaSelecionada){
     const bebida = document.querySelector(".bebida .selecionado");
+    const check = bebidaSelecionada.querySelector("ion-icon");
     if (bebida !== null){
         bebida.classList.toggle('selecionado');
+        const checkOn = document.querySelector(".bebida .checkOn");
+        checkOn.classList.toggle('checkOn');
     }
     bebidaSelecionada.classList.add('selecionado');
+    check.classList.add('checkOn');
+
     bebidaEsc = bebidaSelecionada.innerHTML;
     fecharPedido();
 }
@@ -33,10 +33,15 @@ function selecionarBebida(bebidaSelecionada){
 let sobremesaEsc;
 function selecionarSobremesa(sobremesaSelecionada){
     const sobremesa = document.querySelector(".sobremesa .selecionado");
+    const check = sobremesaSelecionada.querySelector("ion-icon");
     if (sobremesa !== null){
         sobremesa.classList.toggle('selecionado');
+        const checkOn = document.querySelector(".sobremesa .checkOn");
+        checkOn.classList.toggle('checkOn');
     }
     sobremesaSelecionada.classList.add('selecionado');
+    check.classList.add('checkOn');
+
     sobremesaEsc = sobremesaSelecionada.innerHTML;
     fecharPedido();
 }
